@@ -61,7 +61,7 @@ const App = () => {
         gicToogle,
         gic,
       }
-      axios.post("http://localhost:4000/", details).then(res => {
+      axios.post("https://sop-backend-4ggp.onrender.com/", details).then(res => {
         if (res.data.status === "ok") {
           alert("form submitted successfully");
           window.location.reload(false);
